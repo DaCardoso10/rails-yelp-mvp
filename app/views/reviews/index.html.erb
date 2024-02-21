@@ -1,0 +1,9 @@
+<h1>Reviews Index</h1>
+
+<ul>
+  <% @reviews.each do |review| %>
+    <li>Detalle: <%= review.content %>, Rating: <%= review.rating %></li>
+  <% end %>
+</ul>
+
+<%= link_to("Crear Review", new_restaurant_review_path) %>
